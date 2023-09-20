@@ -2,11 +2,12 @@
   <h3>{{login}}</h3>
   <form class="logIn-form">
     <mat-form-field class="input-full-width">
-    <input matInput placeholder="{{userName}}"/>
+    <input matInput class="form-control" placeholder="{{userName}}" formControlName="loginUserName" required/>
   </mat-form-field><br>
   <mat-form-field class ="input-full-width">
-    <input matInput placeholder="{{password}}"/>
+    <input matInput class="form-control" placeholder="{{password}}" type="password" formControlName="loginPassword" required/>
     </mat-form-field><br>
-    <button>{{login}}</button>
+    <button mat-button>{{login}}</button><br><br>
+    <a href="#">{{NewLogin}}</a>
   </form>
 </div>

@@ -7,3 +7,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .login-float{
   float:left right;
 }
+.div-float{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:50vh;
+}
