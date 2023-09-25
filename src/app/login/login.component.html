@@ -7,7 +7,8 @@
   <mat-form-field class ="input-full-width">
     <input matInput class="form-control" placeholder="{{password}}" type="password" formControlName="loginPassword" required/>
     </mat-form-field><br>
-    <button mat-button>{{login}}</button><br><br>
-    <a href="#">{{NewLogin}}</a>
+    <button mat-button [routerLink]="['Home']">{{login}}</button><br><br>
+    <a href="#">{{newLogin}}</a>
   </form>
 </div>
+
