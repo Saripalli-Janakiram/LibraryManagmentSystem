@@ -10,6 +10,7 @@ import { MembershipFormComponent } from './membership-form/membership-form.compo
 import { NewBookComponent } from './new-book/new-book.component';
 import { BookAllotmentComponent } from './book-allotment/book-allotment.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     MaterialModule,
     RouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
