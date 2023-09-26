@@ -1,1 +1,29 @@
-<p>new-book works!</p>
+<div class="container">
+  <div class="row">
+    <label class="header-title">Add A New Book</label>
+  </div><br>
+<form [formGroup]="addBookForm">
+    <div class="row">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Name of the book" formControlName="ctrlBookName" required="Book Name is required"/>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Author Name" formControlName="ctrlAuthorName" required="Author name is required "/>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Volume / Year of Publication" formControlName="ctrlVolume" required="Volume / year of publication is required "/>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field>
+        <input type="number" matInput placeholder="No of Books" formControlName="ctrlNoOfBooks" required="No of Books "/>
+      </mat-form-field>
+    </div>
+    <button mat-button type="submit" class="primary" [disabled]="!addBookForm.valid" (click)="testData()">Save</button>
+    <button mat-button type="button" class="danger" (click)="reset()">Clear</button>
+</form>
+</div>
