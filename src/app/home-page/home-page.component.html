@@ -1,4 +1,20 @@
+<div class="basic-container">
+<mat-tab-group>
+<mat-tab label="{{newMembership}}">
+  <ng-template matTabContent>
+    <app-membership-form></app-membership-form>
+  </ng-template>
+</mat-tab>
+<mat-tab label="{{addNewBook}}">
+  <ng-template matTabContent>
+      <app-new-book></app-new-book>
+  </ng-template>
+</mat-tab>
+<mat-tab label="{{allotBook}}">
+  <ng-template matTabContent>
+  <app-book-allotment></app-book-allotment>
+</ng-template>
+</mat-tab>
+</mat-tab-group>
+</div>
 
-<button mat-button color="primary">{{newMembership}}</button>
-<button mat-button color="primary">{{addNewBook}}</button>
-<button mat-button color ="primary">{{allotBook}}</button>
