@@ -25,7 +25,7 @@ public testData(){
     console.log(this.addBookForm.controls.ctrlVolume.value);
     console.log(this.addBookForm.controls.ctrlNoOfBooks.value);
     }
-    this.reset();
+    this.reset();0
 }
 }
 
